@@ -1,0 +1,16 @@
+Nice
+
+	Adresa functiei vulnerabile este 0x08048663 , si reprezinta adresa
+functiei apelate prin <print_flag+0xb2>.
+Este o functie vulnerabila deorece se aloca 0x91 spatiu, si se citesc 0x139.
+	In main , se vor apela mai multe functii ,fiecare dintre ele 
+foloseste functia de citire. Daca dimensiunea datelor de intrare depaseste 
+dimensiunea bufferului ,atunci datele se vor suprascrie.
+
+Naughty
+	Adresa functiei vulnerabile este 0x080486a9 ,si reprezinta adresa
+functiei apelate prin <print_flag+0xf8>.
+Este o functie vulnerabila deoarece se aloca 0x162 si se citesc 0x256.
+	In main,se vor apela mai multe functii , care compara adresa de 
+pe o anumita pozitie pentru a trece la urmatoarea functie , neiesind din
+program.
